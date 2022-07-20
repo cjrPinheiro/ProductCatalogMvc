@@ -3,15 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.Domain", "ProductCatalogMvc.Domain\ProductCatalogMvc.Domain.csproj", "{2EA0B3A0-2A3F-4AF1-A32C-E4C5F537C24C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.Domain", "ProductCatalogMvc.Domain\ProductCatalogMvc.Domain.csproj", "{2EA0B3A0-2A3F-4AF1-A32C-E4C5F537C24C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.Application", "ProductCatalogMvc.Application\ProductCatalogMvc.Application.csproj", "{A0636CF3-5A77-48E8-85A9-D33DEF54A409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.Application", "ProductCatalogMvc.Application\ProductCatalogMvc.Application.csproj", "{A0636CF3-5A77-48E8-85A9-D33DEF54A409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.Infra.Data", "ProductCatalogMvc.Infra.Data\ProductCatalogMvc.Infra.Data.csproj", "{BD0EC7C1-7EDD-4B69-9938-F3C65DB72DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.Infra.Data", "ProductCatalogMvc.Infra.Data\ProductCatalogMvc.Infra.Data.csproj", "{BD0EC7C1-7EDD-4B69-9938-F3C65DB72DC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.Infra.IoC", "ProductCatalogMvc.Infra.IoC\ProductCatalogMvc.Infra.IoC.csproj", "{7CAFF962-5E62-43BF-9383-A4D497679396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.Infra.IoC", "ProductCatalogMvc.Infra.IoC\ProductCatalogMvc.Infra.IoC.csproj", "{7CAFF962-5E62-43BF-9383-A4D497679396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.WebUI", "ProductCatalogMvc.WebUI\ProductCatalogMvc.WebUI.csproj", "{C733DC9B-46FD-4A51-93EE-78D7BF7F5277}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.WebUI", "ProductCatalogMvc.WebUI\ProductCatalogMvc.WebUI.csproj", "{C733DC9B-46FD-4A51-93EE-78D7BF7F5277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.Domain.Tests", "ProductCatalogMvc.Domain.Tests\ProductCatalogMvc.Domain.Tests.csproj", "{719D009D-BFB4-4801-9450-B0B7A119AE5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{F34957B4-674A-4D16-B189-20287DB587C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{02B3C9CF-9BFC-48AD-8AFE-FE6FC003DE36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{EE20F3EF-99B6-46D3-8033-47B5EC25C48A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 -Business", "2 -Business", "{614819DD-EC68-4199-A666-C29E332A3861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +49,21 @@ Global
 		{C733DC9B-46FD-4A51-93EE-78D7BF7F5277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C733DC9B-46FD-4A51-93EE-78D7BF7F5277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C733DC9B-46FD-4A51-93EE-78D7BF7F5277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719D009D-BFB4-4801-9450-B0B7A119AE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719D009D-BFB4-4801-9450-B0B7A119AE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719D009D-BFB4-4801-9450-B0B7A119AE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719D009D-BFB4-4801-9450-B0B7A119AE5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EA0B3A0-2A3F-4AF1-A32C-E4C5F537C24C} = {F34957B4-674A-4D16-B189-20287DB587C5}
+		{A0636CF3-5A77-48E8-85A9-D33DEF54A409} = {614819DD-EC68-4199-A666-C29E332A3861}
+		{BD0EC7C1-7EDD-4B69-9938-F3C65DB72DC6} = {EE20F3EF-99B6-46D3-8033-47B5EC25C48A}
+		{7CAFF962-5E62-43BF-9383-A4D497679396} = {EE20F3EF-99B6-46D3-8033-47B5EC25C48A}
+		{C733DC9B-46FD-4A51-93EE-78D7BF7F5277} = {02B3C9CF-9BFC-48AD-8AFE-FE6FC003DE36}
+		{719D009D-BFB4-4801-9450-B0B7A119AE5E} = {F34957B4-674A-4D16-B189-20287DB587C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A501A21A-B3CA-46F7-BC76-77DD250B79E4}
