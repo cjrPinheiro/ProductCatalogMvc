@@ -10,6 +10,7 @@ namespace ProductCatalogMvc.Domain.Entities
     public sealed class Category : BaseEntity
     {
         public string? Name { get; private set; }
+        public bool Active { get; private set; }
         public ICollection<Product>? Products { get; set; }
 
         public Category(string name)

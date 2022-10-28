@@ -15,7 +15,8 @@ namespace ProductCatalogMvc.Domain.Interfaces
         Task<Category> CreateAsync(Category category);
         Task<Category> UpdateAsync(Category category);
         Task<Category> RemoveAsync(Category category);
-
+        Task<List<string>> GetActivetedInjectable(string filter);
+        Task<List<string>> GetActivatedUninjectable(string active);
 
     }
 }

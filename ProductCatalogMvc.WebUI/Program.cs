@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using ProductCatalogMvc.Domain.Interfaces;
+using ProductCatalogMvc.Infra.Data.Context;
+using ProductCatalogMvc.Infra.Data.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>(
+             context => context.UseSqlite("Data Source=ProductCatalog.db")
+         );
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 

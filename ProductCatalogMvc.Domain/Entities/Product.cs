@@ -14,6 +14,7 @@ namespace ProductCatalogMvc.Domain.Entities
         public decimal Price { get; private set; }
         public int Stock { get; private set; }
         public string? Image { get; private set; }
+        public string? CNPJProvider { get; private set; }
 
         public Product(int id, string? name, string? description, decimal price, int stock, string? image)
         {

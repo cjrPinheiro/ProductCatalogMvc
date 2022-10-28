@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.Infra.IoC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.WebUI", "ProductCatalogMvc.WebUI\ProductCatalogMvc.WebUI.csproj", "{C733DC9B-46FD-4A51-93EE-78D7BF7F5277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogMvc.Domain.Tests", "ProductCatalogMvc.Domain.Tests\ProductCatalogMvc.Domain.Tests.csproj", "{719D009D-BFB4-4801-9450-B0B7A119AE5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogMvc.Domain.Tests", "ProductCatalogMvc.Domain.Tests\ProductCatalogMvc.Domain.Tests.csproj", "{719D009D-BFB4-4801-9450-B0B7A119AE5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{F34957B4-674A-4D16-B189-20287DB587C5}"
 EndProject
